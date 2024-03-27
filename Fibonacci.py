@@ -1,9 +1,10 @@
-a = int(input("Enter a number: "))
-b = int(input("Enter a number: "))
-c = int(input("Enter a number: "))
-if a > b and a > c:
-    print(a, ": Is the largest number")
-elif b > a and b > c:
-    print(b, ": Is the largest number")
-elif c > a and c > b:
-    print(c, ": Is the largest number")
+a = 0
+b = 1
+n = int(input("Enter a number: "))
+print(a)
+print(b)
+for i in range(2, n):
+    c = a + b
+    a = b
+    b = c
+    print(c)
